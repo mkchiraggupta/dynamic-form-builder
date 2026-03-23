@@ -1,0 +1,144 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+  display: grid;
+  gap: 16px;
+}
+
+.app__header h1 {
+  margin: 0 0 8px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr 1fr;
+  gap: 16px;
+}
+
+.panel {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.panel h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.palette {
+  display: grid;
+  gap: 8px;
+}
+
+.palette__item,
+button {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #f9fafb;
+  color: #111827;
+  cursor: pointer;
+  padding: 8px 10px;
+}
+
+.panel--canvas {
+  min-height: 280px;
+}
+
+.field-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.field-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.field-list__item.is-selected {
+  border-color: #6366f1;
+  background: #eef2ff;
+}
+
+.field-list__select {
+  width: 100%;
+  text-align: left;
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+.danger {
+  background: #fef2f2;
+  border-color: #fecaca;
+  color: #b91c1c;
+}
+
+.settings,
+.preview-form {
+  display: grid;
+  gap: 10px;
+}
+
+label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+  display: grid;
+  gap: 6px;
+}
+
+input,
+select,
+textarea {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font: inherit;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.panel--preview .preview-field {
+  display: grid;
+  gap: 6px;
+}
+
+.muted {
+  color: #6b7280;
+}
+
+.error {
+  color: #b91c1c;
+}
+
+.io-actions {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.schema-box {
+  min-height: 180px;
+  width: 100%;
+}
+
+@media (max-width: 960px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
