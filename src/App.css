@@ -10,6 +10,11 @@
   margin: 0 0 8px;
 }
 
+.app a {
+  color: #4338ca;
+  text-decoration: none;
+}
+
 .layout {
   display: grid;
   grid-template-columns: 1fr 1.4fr 1fr;
@@ -90,6 +95,19 @@ button {
   gap: 10px;
 }
 
+.top-row {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr 1fr auto;
+  align-items: end;
+}
+
+.top-row__actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
 label {
   font-size: 13px;
   font-weight: 600;
@@ -139,6 +157,10 @@ textarea {
 
 @media (max-width: 960px) {
   .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .top-row {
     grid-template-columns: 1fr;
   }
 }
